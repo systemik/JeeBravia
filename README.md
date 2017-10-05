@@ -5,6 +5,7 @@ Based on https://github.com/bunk3r/braviapy
 
 Usage :
 
+```
 HELP :
 
 $ ./jeebravia.py -h
@@ -196,3 +197,4 @@ ActionMenu
 Help
 TvSatellite
 WirelessSubwoofer
+```
