@@ -8,16 +8,24 @@ Usage :
 ```
 HELP :
 
-$ ./jeebravia.py -h
+$ python jeebravia.py -h
 Usage: jeebravia.py (-h|--help) (-p|--pin <pin>) (-v|--verbose) (-d|--discover) (-w|--wol <macaddr>) (-r|--remote) (-c|--command <command>)
-    
+
+FIRST TIME USE (PIN CODE REGISTRATION):
+
+$ python jeebravia.py
+[*] AccessControl
+[W] HTTPError: 401
+Pincode: 5132
+Sending PIN  5132
+
 DISCOVER :
-$ ./jeebravia.py -d
+$ python jeebravia.py -d
 Bravia found on 192.168.1.72
 
 REMOTE CONTROL VIA SHELL :
 
-$ ./bravia.py -r
+$ python jeebravia.py -r
 [*] AccessControl
 Registered!
 CLIENTID=TVSideView:eb1214c4-321d-47ab-948d-9b9ebb36354e
@@ -45,7 +53,7 @@ Remote Controller: exit!
 
 VERBOSE MODE
 
-$ ./bravia.py -v
+$ python jeebravia.py -v
 [*] AccessControl
 Registered!
 CLIENTID=TVSideView:eb1214c4-321d-47ab-948d-9b9ebb36354e
@@ -76,7 +84,7 @@ RESULT:  [{"programTitle": "In diretta dalla Camera dei Deputati \"Question Time
 
 SEND COMMAND
 
-$ ./jeebravia.py -c Volume Up
+$ python jeebravia.py -c Volume Up
 
 LIST OF KNOWN COMMANDS:
 
